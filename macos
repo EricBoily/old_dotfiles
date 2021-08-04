@@ -17,10 +17,17 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
+
 # sudo scutil --set ComputerName "MacBook Pro 2019"
-# sudo scutil --set HostName "MacBook Pro 2019"
-# sudo scutil --set LocalHostName "MacBook Pro 2019"
-# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook Pro 2019"
+
+# sudo scutil --set HostName flame01.domain.com 
+# sudo scutil --set HostName "mbp2019.ericboily.com"
+
+# sudo scutil --set LocalHostName flame01
+# sudo scutil --set LocalHostName "MacBook-Pro-2019"
+
+
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook-Pro-2019"
 
 # Disable the “Are you sure you want to open this application?” dialog
 # defaults write com.apple.LaunchServices LSQuarantine -bool false
