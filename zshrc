@@ -77,7 +77,7 @@ export ZSH="/Users/eboily/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew chucknorris)
+plugins=(git brew chucknorris osx)
 
 source $ZSH/oh-my-zsh.sh
 
